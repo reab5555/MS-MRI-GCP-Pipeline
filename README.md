@@ -46,9 +46,7 @@ Model Saving: Store best model in GCS
 Model Registration: Upload to Vertex AI Model Registry   
 
 ## Scheduling
-Frequency   
-Timing   
-Concurrency   
+Frequency, Timing, and Concurrency settings    
 
 ## Outputs
 Trained model artifact   
