@@ -56,10 +56,10 @@ Registered model in Vertex AI
 ## Usage
 To deploy this pipeline:   
 Ensure GCP credentials are set up   
-Run the pipe.py script to compile and submit the pipeline   
+Run the gcp_pipeline.py script to compile and submit the pipeline   
 Monitor the pipeline job in Vertex AI console   
 
 ## Notes
-Adjust hyperparameters in MS_f_2C_gcp.py for optimization   
+Adjust hyperparameters in gcp_MS_f_2C.py for optimization   
 Ensure sufficient GCS permissions for data access and model storage   
  
