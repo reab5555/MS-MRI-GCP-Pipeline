@@ -1,0 +1,14 @@
+numpy
+scikit-learn
+matplotlib
+seaborn
+tqdm
+pillow
+transformers
+torch
+torchvision
+torchaudio
+gcsfs
+kfp
+google-cloud-aiplatform
+google-cloud-storage
