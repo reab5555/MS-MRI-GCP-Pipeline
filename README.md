@@ -12,13 +12,13 @@ Classes: 'NON-MS' and 'MS'
 Processing: Custom dataset class for loading and balancing   
 
 ### 2. Model Architecture
-Base Model: Pre-trained Vision Transformer (ViT)   
+Base Model: Pre-trained Vision Transformer (ViT) (vit-base-patch16-384)  
 Customization: Added classifier for binary classification   
    
 ### 3. Training Process
-Cross-Validation: 6-fold stratified cross-validation   
+Cross-Validation: 6-fold stratified
 Optimization: AdamW optimizer with linear learning rate schedule   
-Loss Function: Binary Cross-Entropy with Logits   
+Loss Function: Binary Cross-Entropy
 Early Stopping: Based on validation loss   
 
 ### 4. Evaluation
