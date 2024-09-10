@@ -1,4 +1,5 @@
-# MS MRI Classification Pipeline
+# 
+Multiple sclerosis MRI Classification Pipeline
 
 ## Overview
 This pipeline automates the process of training and deploying a machine learning model for classifying Multiple Sclerosis (MS) MRI scans. It utilizes Google Cloud Platform's Vertex AI for orchestration and scalability. The primary task of the model is to predict whether a patient has MS or not (NON-MS) based on their MRI scans. This binary classification helps in early detection and diagnosis of Multiple Sclerosis, potentially leading to more timely and effective treatment interventions.
