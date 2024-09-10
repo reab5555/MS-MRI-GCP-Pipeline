@@ -6,60 +6,61 @@ This pipeline automates the process of training and deploying a machine learning
 ## Pipeline Components
 
 ### 1. Data Preparation
-Source: MRI scans stored in Google Cloud Storage (GCS)
-Classes: 'NON-MS' and 'MS'
-Processing: Custom dataset class for loading and balancing
+Source: MRI scans stored in Google Cloud Storage (GCS)   
+Classes: 'NON-MS' and 'MS'   
+Processing: Custom dataset class for loading and balancing   
 
 ### 2. Model Architecture
-Base Model: Pre-trained Vision Transformer (ViT)
-Customization: Added classifier for binary classification
-
+Base Model: Pre-trained Vision Transformer (ViT)   
+Customization: Added classifier for binary classification   
+   
 ### 3. Training Process
-Cross-Validation: 6-fold stratified cross-validation
-Optimization: AdamW optimizer with linear learning rate schedule
-Loss Function: Binary Cross-Entropy with Logits
-Early Stopping: Based on validation loss
+Cross-Validation: 6-fold stratified cross-validation   
+Optimization: AdamW optimizer with linear learning rate schedule   
+Loss Function: Binary Cross-Entropy with Logits   
+Early Stopping: Based on validation loss   
 
 ### 4. Evaluation
-Metrics: Accuracy, Precision, Recall, F1-Score
-Reporting: Per-fold and averaged across folds
+Metrics: Accuracy, Precision, Recall, F1-Score   
+Reporting: Per-fold and averaged across folds   
 
 ### 5. Model Saving
-Format: PyTorch state dict
-Storage: GCS bucket with timestamp
+Format: PyTorch state dict   
+Storage: GCS bucket with timestamp   
 
-### 6. Vertex AI Integration
-Metric Logging: Training and validation metrics
-Model Registry: Automated model versioning
+### 6. Vertex AI Integration  
+Metric Logging: Training and validation metrics   
+Model Registry: Automated model versioning   
 
 ## Pipeline Workflow
-Data Loading: Fetch MRI scans from GCS
-Model Initialization: Set up custom ViT model
-Cross-Validation Loop:
-Train on 5 folds
-Validate on 1 fold
-Log metrics to Vertex AI
-
-Model Evaluation: Aggregate results across all folds
-Model Saving: Store best model in GCS
-Model Registration: Upload to Vertex AI Model Registry
+Data Loading: Fetch MRI scans from GCS   
+Model Initialization: Set up custom ViT model   
+### Cross-Validation Loop:   
+Train on 5 folds   
+Validate on 1 fold   
+Log metrics to Vertex AI   
+   
+Model Evaluation: Aggregate results across all folds   
+Model Saving: Store best model in GCS   
+Model Registration: Upload to Vertex AI Model Registry   
 
 ## Scheduling
-Frequency
-Timing
-Concurrency
+Frequency   
+Timing   
+Concurrency   
 
 ## Outputs
-Trained model artifact
-Performance metrics
-Registered model in Vertex AI
+Trained model artifact   
+Performance metrics   
+Registered model in Vertex AI   
 
 ## Usage
-To deploy this pipeline:
-Ensure GCP credentials are set up
-Run the pipe.py script to compile and submit the pipeline
-Monitor the pipeline job in Vertex AI console
+To deploy this pipeline:   
+Ensure GCP credentials are set up   
+Run the pipe.py script to compile and submit the pipeline   
+Monitor the pipeline job in Vertex AI console   
 
 ## Notes
-Adjust hyperparameters in MS_f_2C_gcp.py for optimization
-Ensure sufficient GCS permissions for data access and model storage
+Adjust hyperparameters in MS_f_2C_gcp.py for optimization   
+Ensure sufficient GCS permissions for data access and model storage   
+ 
