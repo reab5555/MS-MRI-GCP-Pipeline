@@ -18,7 +18,7 @@ Customization: Added classifier for binary classification
 ### 3. Training Process
 Cross-Validation: 6-fold stratified   
 Optimization: AdamW optimizer with linear learning rate schedule   
-Loss Function: Binary Cross-Entropy
+Loss Function: Binary Cross-Entropy   
 Early Stopping: Based on validation loss   
 
 ### 4. Evaluation
